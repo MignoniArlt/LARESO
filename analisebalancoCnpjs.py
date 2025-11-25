@@ -3,6 +3,12 @@
 Created on Thu Nov 13 13:54:39 2025
 
 Analisar balanço de massa dos MTRs 
+- Abre o banco de dados, extrai a planilha do mtr e converte em banco de dados;
+- Classifica de acordo com os tipos de resíduos, filtra pra 2024;
+- Arruma os CNPJs;
+- Soma a quantidade que a empresa recebeu e que gerou;
+- Calcula o saldo: Gerado - Recebido 
+- Incorpora uma coluna com todos os tipos de residuos abrangidos na soma;
 
 @author: ASUS
 """
@@ -420,4 +426,5 @@ plt.legend()
 plt.grid(alpha=0.3)
 plt.title("Detecção da porção linear inicial e interseção com a reta do trecho 2")
 plt.show()
+
 
